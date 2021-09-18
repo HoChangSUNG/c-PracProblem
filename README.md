@@ -1,5 +1,7 @@
 # 2학년 2학기 c++프로그래밍 과제 
+
 ### 문제
+
 <details>
 <summary>1주차 실습문제</summary>
   
@@ -20,6 +22,7 @@
 
 </details>
 
+<details>
 <summary>2주차 실습문제</summary>
   
 * 1번 문제</br>
@@ -64,16 +67,16 @@
 <summary>2주차 실습코드</summary>
   
 * 1번 문제</br>
-
+[Practice2Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem1.cpp)
 * 2번 문제</br>
-
+[Practice2Problem2.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem2.cpp)
 * 3번 문제</br>
-
+[Practice2Problem3.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem3.cpp)
 * 4번 문제</br>
-
+[Practice2Problem4.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem4.cpp)
 * 5번 문제</br>
-
+[Practice2Problem5.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem5.cpp)
 * 6번 문제</br>
-
+[Practice2Problem6.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem6.cpp)
 </details>
 
