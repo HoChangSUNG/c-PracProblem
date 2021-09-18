@@ -26,21 +26,22 @@
 <summary>2주차 실습문제</summary>
   
 * 1번 문제</br>
-
+![image](https://user-images.githubusercontent.com/76422685/133895148-15211119-c64b-4d34-93e5-1c921a609d70.png)
 
 * 2번 문제</br>
-
+![image](https://user-images.githubusercontent.com/76422685/133895157-f6ecfb78-82c2-436f-90f2-fd37c4ede312.png)
 
 * 3번 문제</br>
-
+![image](https://user-images.githubusercontent.com/76422685/133895171-7b4790b6-bcf1-42ce-b7b3-a0d56baa711d.png)
 
 * 4번 문제</br>
-
+![image](https://user-images.githubusercontent.com/76422685/133895176-ec8026b5-6a07-4f29-84d8-a64328d4fa78.png)
 
 * 5번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/133895183-f3030236-424c-42b0-84df-876a63d34460.png)
 
 * 6번 문제</br>
-
+![image](https://user-images.githubusercontent.com/76422685/133895191-30319079-0fdb-40cd-9b5f-52b161e9c6f7.png)
 
 </details>
 
