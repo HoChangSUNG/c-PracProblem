@@ -57,13 +57,13 @@ void merge(int arr1[], int arr2[], int mergeArr[], int arrLength, int mergeArrLe
 		mergeArrIdx++;
 	}
 
-	for (int i = arr1Idx; i < arrLength; i++) 
+	for (; arr1Idx < arrLength; arr1Idx++, mergeArrIdx++)
 	{
-		mergeArr[mergeArrIdx++] = arr1[i];
+		mergeArr[mergeArrIdx] = arr1[arr1Idx];
 	}
-	for (int i = arr2Idx; i < arrLength; i++) 
+	for (; arr2Idx < arrLength; arr2Idx++, mergeArrIdx++)
 	{
-		mergeArr[mergeArrIdx++] = arr2[i];
+		mergeArr[mergeArrIdx] = arr2[arr2Idx];
 	}
 
 	//arr[]은 함수의 매개변수로 받을 때 배열 자체를 매개변수로 전달받는 것이 아닌 해당 배열의
