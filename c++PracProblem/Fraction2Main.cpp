@@ -3,7 +3,6 @@
 int main()
 {
 
-	
 	Fraction2 f1, f2;
 	cout << "분자와 분모를 정수로 입력하세요 : ";
 	cin >> f1;
@@ -22,5 +21,6 @@ int main()
 		cout << f1 << " > " << f2 << endl;
 	else if(f1 == f2)
 		cout << f1 << " == " << f2 << endl;
+
 	return 0;
 }

@@ -8,6 +8,8 @@ Fraction2::Fraction2() {
 	denominator = 0;
 };
 
+Fraction2::~Fraction2() {}
+
 Fraction2::Fraction2(int NewNumerator, int newDenominator) :numerator(NewNumerator), denominator(newDenominator)
 {
 
@@ -95,18 +97,19 @@ ostream& operator <<(ostream& outputStream,const Fraction2& frac)
 
 istream& operator >>(istream& inputStream, Fraction2& frac)
 {
-	cin >> frac.numerator >> frac.denominator;
+	int tmpNumerator, tmpDenominator;
+	cin >> tmpNumerator >> tmpDenominator;
 
-	while (frac.numerator == 0 || frac.denominator == 0)
+	while (tmpNumerator == 0 || tmpDenominator == 0)
 	{
-		if (frac.numerator == 0 && frac.denominator != 0)
+		if (tmpNumerator == 0 && tmpDenominator != 0)
 			cout << "분자가 0이면 안 됩니다. 재입력받습니다" << endl << "분자와 분모를 정수로 입력하세요 : ";
-		else if(frac.numerator != 0 && frac.denominator == 0)
+		else if(tmpNumerator != 0 && tmpDenominator == 0)
 			cout << "분모가 0이면 안 됩니다. 재입력받습니다" << endl << "분자와 분모를 정수로 입력하세요 : ";
 		else
 			cout << "분자와 분모가 0이면 안 됩니다. 재입력받습니다" << endl << "분자와 분모를 정수로 입력하세요 : ";
-
-		cin >> frac.numerator >> frac.denominator;
 	}
+
+	frac = Fraction2(tmpNumerator, tmpDenominator);
 	return inputStream;
 }

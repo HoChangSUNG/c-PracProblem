@@ -7,6 +7,7 @@ class Fraction2
 public:
 	Fraction2();
 	Fraction2(int numerator, int denominator);
+	~Fraction2();
 
 	int getGcd(int num1, int num2) const;
 	int getLcm(int num1, int num2) const;
