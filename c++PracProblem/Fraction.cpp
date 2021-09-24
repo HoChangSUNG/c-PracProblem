@@ -8,6 +8,8 @@ Fraction::Fraction() {
 	denominator = 0;
 };
 
+Fraction::~Fraction() {}
+
 Fraction::Fraction(int NewNumerator, int newDenominator) :numerator(NewNumerator), denominator(newDenominator)
 {
 	if (denominator < 0) // 분모,분자 모두 음수일 경우 / 분모가 음수,분자가 양수일 경우
