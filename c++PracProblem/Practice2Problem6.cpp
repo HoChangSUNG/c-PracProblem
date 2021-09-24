@@ -4,6 +4,7 @@ using namespace std;
 void matrixAdd(int arr1[][3], int arr2[][3], int addArr[][3]);
 void matrixMuli(int arr1[][3], int arr2[][3], int multiArr[][3]);
 void matrixPrint(int arr[][3]);
+const int matrixLength = 3;
 
 int main() 
 { 
@@ -23,25 +24,24 @@ int main()
 
 
 }
-void matrixAdd(int arr1[][3], int arr2[][3], int addArr[][3]) 
+void matrixAdd(int arr1[][3], int arr2[][matrixLength], int addArr[][matrixLength])
 {
-	int arr[3][3] = {};
-	for (int i = 0; i < 3; i++) 
+	for (int i = 0; i < matrixLength; i++)
 	{
-		for (int j = 0; j < 3; j++) 
+		for (int j = 0; j < matrixLength; j++)
 		{
 			addArr[i][j] = arr1[i][j] + arr2[i][j];
 		}
 	}
 }
 
-void matrixMuli(int arr1[][3], int arr2[][3], int multiArr[][3]) 
+void matrixMuli(int arr1[][matrixLength], int arr2[][matrixLength], int multiArr[][matrixLength])
 {
-	for (int i = 0; i < 3; i++) 
+	for (int i = 0; i < matrixLength; i++)
 	{
-		for (int j = 0; j < 3; j++) 
+		for (int j = 0; j < matrixLength; j++)
 		{
-			for (int k = 0; k < 3; k++) 
+			for (int k = 0; k < matrixLength; k++)
 			{
 				multiArr[i][k] += arr1[i][j] * arr2[j][k];
 			}
@@ -49,12 +49,12 @@ void matrixMuli(int arr1[][3], int arr2[][3], int multiArr[][3])
 	}
 }
 
-void matrixPrint(int arr[][3]) 
+void matrixPrint(int arr[][matrixLength])
 {
-	for (int i = 0; i < 3; i++) 
+	for (int i = 0; i < matrixLength; i++)
 	{
 		cout << "|";
-		for (int j = 0; j < 3; j++)
+		for (int j = 0; j < matrixLength; j++)
 		{
 			printf("%3d", arr[i][j]);
 		}
