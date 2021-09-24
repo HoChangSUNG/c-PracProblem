@@ -45,6 +45,21 @@
 
 </details>
 
+<details>
+<summary>3주차 실습문제</summary>
+  
+* 1번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/134633983-1d6073dc-bff8-4ec6-b896-6e0a44804397.png)
+
+* 2번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/134634049-476a755a-c115-4c11-9318-e4fcf4aee852.png)
+
+* 3번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/134634148-11f5e423-1092-4883-a1e0-101ef6169b09.png)
+
+</details>
+
+
 #
 ### 코드
 
@@ -81,3 +96,22 @@
 [Practice2Problem6.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem6.cpp)
 </details>
 
+<details>
+<summary>3주차 실습코드</summary>
+  
+* 1번 문제</br>
+[Matrix.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Matrix.h) 
+[Matrix.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Matrix.cpp) 
+[MatrixMain.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MatrixMain.cpp)
+
+* 2번 문제</br>
+[Fraction.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Fraction.h) 
+[Fraction.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Fraction.cpp) 
+[FractionMain.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/FractionMain.cpp)  
+
+* 3번 문제</br>
+[Fraction2.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Fraction2.h) 
+[Fraction2.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Fraction2.cpp) 
+[Fraction2Main.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Fraction2Main.cpp)  
+
+</details>
