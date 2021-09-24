@@ -4,8 +4,6 @@ using namespace std;
 
 int main()
 {
-	srand((unsigned int)time(NULL));
-
 	Matrix m1,m2;
 	m1.print(); m2.print();
 	Matrix m3 = m1.add(m2);
