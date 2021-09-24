@@ -91,14 +91,14 @@ const bool Fraction2::operator ==(const Fraction2& frac) const
 
 ostream& operator <<(ostream& outputStream,const Fraction2& frac)
 {
-	cout << frac.numerator << "/" << frac.denominator;
+	outputStream << frac.numerator << "/" << frac.denominator;
 	return outputStream;
 }
 
 istream& operator >>(istream& inputStream, Fraction2& frac)
 {
 	int tmpNumerator, tmpDenominator;
-	cin >> tmpNumerator >> tmpDenominator;
+	inputStream >> tmpNumerator >> tmpDenominator;
 
 	while (tmpNumerator == 0 || tmpDenominator == 0)
 	{
@@ -108,6 +108,7 @@ istream& operator >>(istream& inputStream, Fraction2& frac)
 			cout << "분모가 0이면 안 됩니다. 재입력받습니다" << endl << "분자와 분모를 정수로 입력하세요 : ";
 		else
 			cout << "분자와 분모가 0이면 안 됩니다. 재입력받습니다" << endl << "분자와 분모를 정수로 입력하세요 : ";
+		inputStream >> tmpNumerator >> tmpDenominator;
 	}
 
 	frac = Fraction2(tmpNumerator, tmpDenominator);
