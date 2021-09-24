@@ -15,6 +15,8 @@ Matrix::Matrix()
 	}
 }
 
+Matrix::~Matrix() {}
+
 void  Matrix::print() const
 {
 	cout << endl;

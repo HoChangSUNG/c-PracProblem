@@ -4,6 +4,8 @@ class Matrix
 {
 public:
 	Matrix();
+	~Matrix();
+
 	void print() const;
 	Matrix add(const Matrix& matrix) const;
 	Matrix multi(const Matrix& matrix)const;
