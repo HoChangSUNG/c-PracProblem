@@ -19,6 +19,7 @@ public:
 
 	void print()const;
 	void changeToIrreducibleFraction(int gcd);
+	int getAbs(int num) const;
 
 private:
 	int numerator, denominator;
