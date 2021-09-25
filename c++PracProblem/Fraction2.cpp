@@ -19,7 +19,7 @@ Fraction2::Fraction2(int NewNumerator, int newDenominator) :numerator(NewNumerat
 		denominator = -denominator;
 	}
 
-	int divisor = getGcd(abs(numerator), abs(denominator));
+	int divisor = getGcd(getAbs(numerator), getAbs(denominator));
 	if (divisor > 1) // 기약 분수의 형태가 아닐 경우 기약 분수의 형태로 분자,분모를 변경
 	{
 		changeToIrreducibleFraction(divisor);
@@ -47,6 +47,13 @@ void  Fraction2::changeToIrreducibleFraction(int gcd)//기약 분수 형태로 변경
 {
 	numerator /= gcd;
 	denominator /= gcd;
+}
+
+int Fraction2::getAbs(int num) const
+{
+	if (num < 0)
+		num = -num;
+	return num;
 }
 
 const Fraction2 Fraction2::operator +(const Fraction2& frac) const 

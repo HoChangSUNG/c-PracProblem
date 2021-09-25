@@ -22,6 +22,7 @@ public:
 	const bool operator ==(const Fraction2& frac) const;
 
 	void changeToIrreducibleFraction(int gcd);// 기약 분수의 형태로 분자,분모를 변경
+	int getAbs(int num) const;
 
 	friend ostream& operator <<(ostream& outputStream,const Fraction2& frac);
 	friend istream& operator >>(istream& inStream, Fraction2& frac);
