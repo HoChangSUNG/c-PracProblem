@@ -5,7 +5,7 @@ using namespace std;
 
 Fraction::Fraction() {
 	numerator = 0;
-	denominator = 0;
+	denominator = 1;// 분모는 0이 될 수 없음.
 };
 
 Fraction::~Fraction() {}
