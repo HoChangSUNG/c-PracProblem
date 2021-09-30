@@ -11,6 +11,6 @@ public:
 	Matrix multi(const Matrix& matrix)const;
 
 private:
-	static const int length=3;
-	int matrixArr[length][length];
+	static const int LENGTH=3; //상수는 대문자로
+	int matrixArr[LENGTH][LENGTH];
 };

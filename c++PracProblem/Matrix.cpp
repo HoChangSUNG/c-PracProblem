@@ -5,9 +5,9 @@ using namespace std;
 
 Matrix::Matrix() 
 {
-	for (int i = 0; i < length; i++) 
+	for (int i = 0; i < LENGTH; i++)
 	{
-		for (int j = 0; j < length; j++) 
+		for (int j = 0; j < LENGTH; j++)
 		{
 			matrixArr[i][j] = rand() % 21 -10;
 		}
@@ -19,10 +19,10 @@ Matrix::~Matrix() {}
 void  Matrix::print() const
 {
 	cout << endl;
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < LENGTH; i++)
 	{
 		cout << "|";
-		for (int j = 0; j < length; j++)
+		for (int j = 0; j < LENGTH; j++)
 		{
 			printf("%5d", matrixArr[i][j]);
 		}
@@ -35,9 +35,9 @@ void  Matrix::print() const
 Matrix Matrix::add(const Matrix& matrix) const
 {
 	Matrix addMatrix;
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < LENGTH; i++)
 	{
-		for (int j = 0; j < length; j++)
+		for (int j = 0; j < LENGTH; j++)
 		{
 			addMatrix.matrixArr[i][j] = matrixArr[i][j] + matrix.matrixArr[i][j];
 		}
@@ -49,19 +49,19 @@ Matrix Matrix::multi(const Matrix& matrix) const
 {
 	Matrix multiMatrix;
 
-	for (int i = 0; i < length; i++) // multiMatrix의 원소 값을 0으로 초기화해야 함
+	for (int i = 0; i < LENGTH; i++) // multiMatrix의 원소 값을 0으로 초기화해야 함
 	{
-		for (int j = 0; j < length; j++)
+		for (int j = 0; j < LENGTH; j++)
 		{
 			multiMatrix.matrixArr[i][j] = 0;
 		}
 	}
 
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < LENGTH; i++)
 	{
-		for (int j = 0; j < length; j++)
+		for (int j = 0; j < LENGTH; j++)
 		{
-			for (int k = 0; k < length; k++)
+			for (int k = 0; k < LENGTH; k++)
 			{
 				multiMatrix.matrixArr[i][k] += matrixArr[i][j] * matrix.matrixArr[j][k];
 			}
