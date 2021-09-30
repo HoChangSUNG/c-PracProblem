@@ -5,7 +5,6 @@ using namespace std;
 
 Matrix::Matrix() 
 {
-
 	for (int i = 0; i < length; i++) 
 	{
 		for (int j = 0; j < length; j++) 
@@ -49,6 +48,15 @@ Matrix Matrix::add(const Matrix& matrix) const
 Matrix Matrix::multi(const Matrix& matrix) const
 {
 	Matrix multiMatrix;
+
+	for (int i = 0; i < length; i++) // multiMatrix의 원소 값을 0으로 초기화해야 함
+	{
+		for (int j = 0; j < length; j++)
+		{
+			multiMatrix.matrixArr[i][j] = 0;
+		}
+	}
+
 	for (int i = 0; i < length; i++)
 	{
 		for (int j = 0; j < length; j++)
