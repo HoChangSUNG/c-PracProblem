@@ -14,22 +14,22 @@ int main()
 
 string toCorrectSentence(string sentence)
 {
-	bool isFirstAlpha = true;
-	int diff = 'a' - 'A';
-
-	for (int i = 0; i < sentence.size(); i++) {
-		if (('a' <= sentence[i] && sentence[i] <= 'z') || ('A' <= sentence[i] && sentence[i] <= 'Z')) 
+	int i = 0;
+	for(;i<sentence.size();i++)
+	{
+		if (isalpha(sentence[i])) 
 		{
-			if (isFirstAlpha)
-			{
-				sentence[i] = toupper(sentence[i]);
-				isFirstAlpha = false;
-			}
-			else 
-			{
-				sentence[i] = tolower(sentence[i]);
-			}
+			sentence[i] = toupper(sentence[i]);
+			i++;
+			break;
 		}
 	}
+
+	for (; i < sentence.size(); i++)
+	{
+		if (isalpha(sentence[i]))
+			sentence[i] = tolower(sentence[i]);
+	}
+
 	return sentence;
 }
