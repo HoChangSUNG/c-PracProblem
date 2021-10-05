@@ -22,6 +22,7 @@
 
 </details>
 
+
 <details>
 <summary>2주차 실습문제</summary>
   
@@ -45,6 +46,7 @@
 
 </details>
 
+
 <details>
 <summary>3주차 실습문제</summary>
   
@@ -57,6 +59,25 @@
 * 3번 문제</br>
 ![image](https://user-images.githubusercontent.com/76422685/134634148-11f5e423-1092-4883-a1e0-101ef6169b09.png)
 
+</details>
+
+
+<details>
+<summary>4주차 실습문제</summary>
+  
+* 1번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136017064-04155bbd-4cee-49b5-b5ec-51b52197f6e8.png)
+
+* 2번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136017086-011a41a7-21a6-4b8a-af46-9d60c5c28f3c.png)
+
+* 3번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136017122-d037ab28-f368-4a46-929a-634727f4d2f9.png)
+
+* 4번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136017224-90f791d8-3873-43b4-9514-8b16006d56d8.png)
+![dsBuffer bmp](https://user-images.githubusercontent.com/76422685/136018283-3af59c38-4549-4cfb-8cbf-17231e9f9ba9.png)
+*   D+는 "몇일째 되는 날"으로 나오는 날짜, D-는 "D-날짜"로 확인
 </details>
 
 
@@ -79,6 +100,7 @@
 
 </details>
 
+
 <details>
 <summary>2주차 실습코드</summary>
   
@@ -95,6 +117,7 @@
 * 6번 문제</br>
 [Practice2Problem6.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem6.cpp)
 </details>
+
 
 <details>
 <summary>3주차 실습코드</summary>
@@ -114,4 +137,23 @@
 [Fraction2.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Fraction2.cpp) 
 [Fraction2Main.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Fraction2Main.cpp)  
 
+</details>
+
+
+<details>
+<summary>4주차 실습코드</summary>
+  
+* 1번 문제</br>
+[Practice4Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice4Problem1.cpp) 
+
+* 2번 문제</br>
+[Practice4Problem2.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice4Problem2.cpp) 
+
+* 3번 문제</br>
+[Practice4Problem3.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice4Problem3.cpp) 
+
+* 4번 문제</br>
+[Date.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Date.h) 
+[Date.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Date.cpp) 
+[DateMain.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/DateMain.cpp)  
 </details>
