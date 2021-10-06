@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include "Date.h"
 #include <time.h>
@@ -29,12 +30,12 @@ Date::Date(int newYear, int newMonth, int newDay, int newDday)
 void Date::modifyToCurrentDate()
 {
 	time_t timer;
-	struct tm t;
+	struct tm* t;
 	timer = time(NULL);
-	localtime_s(&t, &timer);
-	year = t.tm_year + 1900;
-	month = t.tm_mon + 1;
-	day = t.tm_mday;
+	t = localtime(&timer);
+	year = t->tm_year + 1900;
+	month = t->tm_mon + 1;
+	day = t->tm_mday;
 	dDay = 0;
 }
 
