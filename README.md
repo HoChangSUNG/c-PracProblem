@@ -3,7 +3,7 @@
 ### 문제
 
 <details>
-<summary>1주차 실습문제</summary>
+<summary> 실습1</summary>
   
 * 1번 문제</br>
 ![1](https://user-images.githubusercontent.com/76422685/133282732-4770a446-2e91-426a-a539-8857a5d73ea9.png)
@@ -24,7 +24,7 @@
 
 
 <details>
-<summary>2주차 실습문제</summary>
+<summary>실습2 - 함수와 배열</summary>
   
 * 1번 문제</br>
 ![image](https://user-images.githubusercontent.com/76422685/133895148-15211119-c64b-4d34-93e5-1c921a609d70.png)
@@ -48,7 +48,7 @@
 
 
 <details>
-<summary>3주차 실습문제</summary>
+<summary>실습3 - 클래스와 연산자 오버로딩</summary>
   
 * 1번 문제</br>
 ![image](https://user-images.githubusercontent.com/76422685/134633983-1d6073dc-bff8-4ec6-b896-6e0a44804397.png)
@@ -63,7 +63,7 @@
 
 
 <details>
-<summary>4주차 실습문제</summary>
+<summary>실습4 - 문자열, 연산자 오버로딩 심화</summary>
   
 * 1번 문제</br>
 ![image](https://user-images.githubusercontent.com/76422685/136017064-04155bbd-4cee-49b5-b5ec-51b52197f6e8.png)
@@ -80,12 +80,29 @@
 *   D+는 "몇일째 되는 날"으로 나오는 날짜, D-는 "D-날짜"로 확인
 </details>
 
+<details>
+<summary>실습5 - 포인터 기초</summary>
+  
+* 1번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136700166-846585d2-d0bf-4954-90ea-baf396d63f8d.png)
+
+* 2번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136700182-811499aa-666a-43b6-9849-6330d16bbf7d.png)
+
+* 3번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136700188-9b14ddc8-a11d-4d6e-986f-a87c5e390710.png)
+
+* 4번 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/136700206-cca0b558-6b18-46b6-a4e6-ad3dda26935a.png)
+
+
+</details>
 
 #
 ### 코드
 
 <details>
-<summary>1주차 실습코드</summary>
+<summary>실습1 - 과제 코드</summary>
   
 * 1번 문제</br>
 [Practice1Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice1Problem1.cpp)
@@ -102,7 +119,7 @@
 
 
 <details>
-<summary>2주차 실습코드</summary>
+<summary>실습2 - 과제 코드</summary>
   
 * 1번 문제</br>
 [Practice2Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice2Problem1.cpp)
@@ -120,7 +137,7 @@
 
 
 <details>
-<summary>3주차 실습코드</summary>
+<summary>실습3 - 과제 코드</summary>
   
 * 1번 문제</br>
 [Matrix.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Matrix.h) 
@@ -141,7 +158,7 @@
 
 
 <details>
-<summary>4주차 실습코드</summary>
+<summary>실습4 - 과제 코드</summary>
   
 * 1번 문제</br>
 [Practice4Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice4Problem1.cpp) 
@@ -156,4 +173,18 @@
 [Date.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Date.h) 
 [Date.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Date.cpp) 
 [DateMain.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/DateMain.cpp)  
+</details>
+
+<details>
+<summary>실습5 - 과제 코드</summary>
+  
+* 1번 문제</br>
+ 
+* 2번 문제</br>
+
+* 3번 문제</br>
+
+
+* 4번 문제</br>
+
 </details>
