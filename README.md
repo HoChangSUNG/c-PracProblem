@@ -182,10 +182,10 @@
  [Practice5Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem1.cpp) 
  
 * 2번 문제</br>
-[Practice5Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem1.cpp) 
+[Practice5Problem2.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem2.cpp) 
 
 * 3번 문제</br>
-[Practice5Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem1.cpp) 
+[Practice5Problem3.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem3.cpp) 
 
 * 4번 문제</br>
 
