@@ -179,11 +179,13 @@
 <summary>실습5 - 과제 코드</summary>
   
 * 1번 문제</br>
+ [Practice5Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem1.cpp) 
  
 * 2번 문제</br>
+[Practice5Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem1.cpp) 
 
 * 3번 문제</br>
-
+[Practice5Problem1.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem1.cpp) 
 
 * 4번 문제</br>
 
