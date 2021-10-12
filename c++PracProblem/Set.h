@@ -13,7 +13,7 @@ public:
 	void add(int newItem);
 	friend ostream& operator <<(ostream& outputStream,const Set& set);
 	friend istream& operator >>(istream& inputStream,Set& set);
-	void print();//test¿ë
+
 private:
 	int size, capacity, *itemArray;
 	bool isOverlap(int newItem) const;

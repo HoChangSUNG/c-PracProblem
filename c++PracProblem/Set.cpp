@@ -74,6 +74,7 @@ Set Set::operator |(const Set& set)const
 
 	return Set(newItemArr, tempSet.size, tempSet.capacity);
 }
+
 bool Set::isOverlap(int newItem) const
 {
 	for(int i=0;i<size;i++)
@@ -82,11 +83,6 @@ bool Set::isOverlap(int newItem) const
 			return true;
 	}
 	return false;
-}
-
-void Set::print()
-{
-	cout << itemArray << endl;
 }
 
 ostream& operator <<(ostream& outputStream, const Set& set)
