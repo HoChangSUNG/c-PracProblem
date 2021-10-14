@@ -188,5 +188,8 @@
 [Practice5Problem3.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Practice5Problem3.cpp) 
 
 * 4번 문제</br>
+[Set.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Set.h) 
+[Set.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Set.cpp) 
+[SetMain.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/SetMain.cpp) 
 
 </details>
