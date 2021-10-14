@@ -9,15 +9,19 @@ Set::Set()
 	size = 0; capacity = INIT_CAPACITY;
 }
 
-Set::Set(int* newItemArray, int newSize, int newCapacity):itemArray(newItemArray),size(newSize),capacity(newCapacity)
+Set::Set(int* newItemArray, int newSize, int newCapacity):size(newSize),capacity(newCapacity)
 {
+	itemArray = new int[capacity];
+	for (int i = 0; i < size; i++)
+		itemArray[i] = newItemArray[i];
+
 }
 
 Set::~Set()
 {
-	if (itemArray!=NULL)
-		delete[] itemArray;
+	delete[] itemArray;
 }
+
 void Set::add(int newItem) 
 {
 	if (!isOverlap(newItem))
@@ -46,22 +50,20 @@ void Set::resize(int newCapacity)
 const Set Set::operator &(const Set& set)const 
 {
 	Set tempSet;
-	int* newItemArr;
+
 	for (int i = 0; i < size; i++)
 	{
 		if (set.isOverlap(itemArray[i]))
 			tempSet.add(itemArray[i]);
 	}
-	newItemArr = tempSet.itemArray;
-	tempSet.itemArray = NULL;
 
-	return Set(newItemArr,tempSet.size, tempSet.capacity);
+	return Set(tempSet.itemArray,tempSet.size, tempSet.capacity);
 }
 
 const Set Set::operator |(const Set& set)const 
 {
 	Set tempSet;
-	int* newItemArr;
+
 	for (int i = 0; i < size; i++)
 		tempSet.add(itemArray[i]);
 	for(int i=0;i<set.size;i++)
@@ -69,10 +71,8 @@ const Set Set::operator |(const Set& set)const
 		if(!isOverlap(set.itemArray[i]))
 			tempSet.add(set.itemArray[i]);
 	}
-	newItemArr = tempSet.itemArray;
-	tempSet.itemArray = NULL;
 
-	return Set(newItemArr, tempSet.size, tempSet.capacity);
+	return Set(tempSet.itemArray, tempSet.size, tempSet.capacity);
 }
 
 bool Set::isOverlap(int newItem) const
