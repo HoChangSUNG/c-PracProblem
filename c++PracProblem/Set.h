@@ -8,8 +8,8 @@ public:
 	Set();
 	Set(int* newItemArray, int newSize, int newCapacity);
 	~Set();
-	Set operator |(const Set& set)const;
-	Set operator &(const Set& set)const;
+	const Set operator |(const Set& set)const;
+	const Set operator &(const Set& set)const;
 	void add(int newItem);
 	friend ostream& operator <<(ostream& outputStream,const Set& set);
 	friend istream& operator >>(istream& inputStream,Set& set);

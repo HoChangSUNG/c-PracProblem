@@ -43,7 +43,7 @@ void Set::resize(int newCapacity)
 	capacity = newCapacity;
 }
 
-Set Set::operator &(const Set& set)const 
+const Set Set::operator &(const Set& set)const 
 {
 	Set tempSet;
 	int* newItemArr;
@@ -58,7 +58,7 @@ Set Set::operator &(const Set& set)const
 	return Set(newItemArr,tempSet.size, tempSet.capacity);
 }
 
-Set Set::operator |(const Set& set)const 
+const Set Set::operator |(const Set& set)const 
 {
 	Set tempSet;
 	int* newItemArr;
