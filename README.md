@@ -98,6 +98,18 @@
 
 </details>
 
+<details>
+<summary>실습6 - MyString class 구현</summary>
+  
+* 문제</br>
+![image](https://user-images.githubusercontent.com/76422685/137596413-90b8aa2f-5a82-4c8f-ad76-5d33e42bbdc6.png)
+![image](https://user-images.githubusercontent.com/76422685/137596432-be776d33-bcba-4d82-ba76-9bf97e768f25.png)
+![image](https://user-images.githubusercontent.com/76422685/137596442-1f35cd15-3227-4881-9a9e-67ae2b27c52c.png)
+
+
+
+</details>
+
 #
 ### 코드
 
