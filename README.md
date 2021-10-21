@@ -205,3 +205,13 @@
 [SetMain.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/SetMain.cpp) 
 
 </details>
+
+<details>
+<summary>실습6 - 과제 코드</summary>
+  
+* 문제</br>
+[MyString.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyString.h) 
+[MyString.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyString.cpp)
+
+
+</details>
