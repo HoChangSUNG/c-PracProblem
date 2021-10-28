@@ -102,9 +102,11 @@
 <summary>실습6 - MyString class 구현</summary>
   
 * 문제</br>
-![image](https://user-images.githubusercontent.com/76422685/137596413-90b8aa2f-5a82-4c8f-ad76-5d33e42bbdc6.png)
-![image](https://user-images.githubusercontent.com/76422685/137596432-be776d33-bcba-4d82-ba76-9bf97e768f25.png)
-![image](https://user-images.githubusercontent.com/76422685/137596442-1f35cd15-3227-4881-9a9e-67ae2b27c52c.png)
+![image](https://user-images.githubusercontent.com/76422685/139238684-1e0aa5ef-7240-4ef7-b05c-6d9b089b1f65.png)
+![image](https://user-images.githubusercontent.com/76422685/139238766-7d8149d0-95f0-4eb3-aa99-370e273d0170.png)
+![image](https://user-images.githubusercontent.com/76422685/139238817-5921b610-f8be-458e-8c6a-dd55bdae273b.png)
+![image](https://user-images.githubusercontent.com/76422685/139238891-61a22702-c400-49b0-844f-f3e7499d492b.png)
+
 
 
 
