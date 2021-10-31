@@ -1,5 +1,5 @@
-#include "MyString.h";
-#include <iostream>;
+#include "MyString.h"
+#include <iostream>
 
 using namespace std;
 
@@ -7,21 +7,20 @@ MyString::MyString()
 {
 	charArr = new char[INIT_CAPACITY];
 	size = 0;
+	capacity = INIT_CAPACITY;
 	charArr[0] = '\0';
 }
 
 MyString::MyString(const char *srcStr)
 {
-	size = getNewArrSize(srcStr);
-	capacity = getNewArrCapacity(size);
-	charArr = new char[capacity];
-	copyCharArr(size, capacity, srcStr);
+	int newSize = getNewArrSize(srcStr);
+	int newCapacity = getNewArrCapacity(newSize);
+	charArr = new char[newCapacity];
+	copyCharArr(newSize, newCapacity, srcStr);
 }
 
-MyString::MyString(const MyString& srcStr)
+MyString::MyString(const MyString &srcStr)
 {
-	size = srcStr.size;
-	capacity = srcStr.capacity;
 	charArr = new char[srcStr.capacity];
 	copyCharArr(srcStr.size, srcStr.capacity, srcStr.charArr);
 
@@ -119,6 +118,7 @@ const MyString& MyString::append(const char* str2nd)
 	return *this;
 	
 }
+
 void MyString::appendMyString(int str2ndSize, const char* str2ndCharArr)
 {
 	int newSize = size + str2ndSize;
@@ -148,10 +148,12 @@ char MyString::at(int pos)const
 
 	return '\0';
 }
-bool  MyString::empty()const
+
+bool MyString::empty()const
 {
 	return size == 0;
 }
+
 bool MyString::isEqual(const MyString& str)const
 {
 	if (size == str.size)
@@ -165,6 +167,7 @@ bool MyString::isEqual(const MyString& str)const
 	}
 	return false;
 }
+
 bool MyString::operator ==(const MyString& str)const
 {
 	return isEqual(str);
@@ -180,9 +183,11 @@ const MyString& MyString::operator +=(const char* str2nd)
 	appendMyString(getNewArrSize(str2nd), str2nd);
 	return *this;
 }
+
 bool MyString::greaterThan(int strSize, const char* srcStr)const
 {
 	int i = 0;
+	
 	while (i < size && i < strSize)
 	{
 		if (charArr[i] > srcStr[i])
@@ -263,7 +268,7 @@ int MyString::findPos(int pos, int subStrSize, const char* subStr)const
 {
 	int resultPos = -1;
 	int subStrIdx = 0;
-	if (pos < 0)
+	if (pos < 0|| subStrSize ==0)
 		return resultPos;
 
 	for (int i = pos; i < size; i++)
@@ -307,7 +312,6 @@ int MyString::find(int pos, const MyString subStr)const
 
 }
 
-
 const MyString MyString::substr(int pos, int cnt)const
 {
 	
@@ -331,7 +335,7 @@ const MyString MyString::substr(int pos, int cnt)const
 	return tempStr;
 }
 
-const MyString& MyString::erase(int pos, int cnt)//1,4
+const MyString& MyString::erase(int pos, int cnt)
 {
 	if (pos < 0 || pos >= size|| cnt == 0)
 		return *this;
@@ -349,8 +353,6 @@ const MyString& MyString::erase(int pos, int cnt)//1,4
 		resize(newCapacity); 
 	return *this;
 }
-
-//여기부터 테스트하기
 
 void MyString::insertStr(int pos, int subStrSize, const char* subStr)
 {
@@ -406,9 +408,7 @@ int stoi(const MyString& srcStr, int pos , int base)
 		}
 		else if(base>10&& ('A' <= toupper(srcStr.charArr[i])) && (toupper(srcStr.charArr[i]) < ('A' + (base % 10))))
 		{
-
 			curNum = 10 + (toupper(srcStr.charArr[i]) - 'A');
-				
 		}
 		else
 		{
@@ -421,7 +421,6 @@ int stoi(const MyString& srcStr, int pos , int base)
 		return -result;
 	return result;
 }
-
 
 char& MyString::operator [](int pos)
 {
@@ -456,12 +455,9 @@ void MyString::addChar(char c)
 
 }
 
-ostream& operator <<(ostream& os, const MyString &str)//테스트 종료 후 변경하기
+ostream& operator <<(ostream& os, const MyString &str)
 {
 	os << str.charArr<<";";
-	
-	os << "size:" << str.size << " capacity:" << str.capacity << "객체주소"<<&str<< endl; //테스트 휴 지우기
-	
 	return os;
 }
 
@@ -469,8 +465,8 @@ istream& operator >>(istream& is, MyString &str)
 {
 	if (str.size != 0)
 	{
-		str.size = 0; str.capacity = str.INIT_CAPACITY; delete[] str.charArr;
-		str.charArr = new char[str.capacity];
+		str.size = 0; 
+		str.resize(str.getNewArrCapacity(str.size));
 	}
 
 	char inputChar;

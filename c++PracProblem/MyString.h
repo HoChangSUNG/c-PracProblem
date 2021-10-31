@@ -1,12 +1,14 @@
 #pragma once
 #include <iostream>
 using namespace std;
+
 class MyString
 {
 public:
+
 	MyString();
+	MyString(const MyString &srcStr);
 	MyString(const char *srcStr);
-	MyString(const MyString& srcStr);
 	~MyString();
 
 	const MyString& operator =(const MyString &srcStr);
@@ -31,7 +33,6 @@ public:
 	friend istream& operator >>(istream& is, MyString &str);
 	friend ostream& operator <<(ostream& os, const MyString &str);
 	
-
 	bool operator <(const MyString &str)const;
 	bool operator >(const MyString &str)const;
 	bool operator <=(const MyString &str)const;
@@ -50,10 +51,9 @@ public:
 	const MyString& replace(int pos, int cnt,const char *subStr);
 
 	const MyString& erase(int pos, int cnt);
-
+	friend int stoi(const MyString& srcStr, int pos = 0, int base = 10);
 	char& operator [](int pos);
-	friend int stoi(const MyString &srcStr, int pos=0 , int base=10);
-
+	
 private:
 	int size;
 	int capacity;
@@ -73,3 +73,4 @@ private:
 	void replaceStr(int pos, int cnt, int subStrSize, const char* subStr);
 	void addChar(char c);
 };
+
