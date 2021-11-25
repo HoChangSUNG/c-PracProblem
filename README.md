@@ -233,7 +233,7 @@
   [Node.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Node.h)
   [Node.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Node.hpp)  
   [MyList.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.h)
-  [MyList.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.h)
+  [MyList.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.hpp)
   
   [main.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)  
   [FundList.new.txt](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/FundList.new.txt)
