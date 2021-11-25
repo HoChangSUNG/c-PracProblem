@@ -107,10 +107,16 @@
 ![image](https://user-images.githubusercontent.com/76422685/139238817-5921b610-f8be-458e-8c6a-dd55bdae273b.png)
 ![image](https://user-images.githubusercontent.com/76422685/139238891-61a22702-c400-49b0-844f-f3e7499d492b.png)
 
+</details>
 
-
+<details>
+<summary>실습7 - 파일+상속+포인터+다형성 구현</summary>
+  
+* 문제</br>
+[문제 요구사항](https://velog.io/@hochang/c-%EA%B3%BC%EC%A0%9C-%EC%9A%94%EA%B5%AC-%EC%A1%B0%EA%B1%B4)
 
 </details>
+
 
 #
 ### 코드
