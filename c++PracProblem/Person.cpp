@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Person.h"
 
 using namespace std;
@@ -30,7 +30,7 @@ Person& Person::operator =(const Person& s)
 
 void Person::print()const
 {
-	cout << "ÀÌ¸§ : " << name << " ÀüÈ­¹øÈ£ : " << phoneNumber << " ÃÑ ±âÅ¹¾×: " << totalDonationMoney << endl;
+	cout << "ì´ë¦„ : " << name << " ì „í™”ë²ˆí˜¸ : " << phoneNumber << " ì´ ê¸°íƒì•¡: " << totalDonationMoney << endl;
 }
 
 string Person::toString() const 

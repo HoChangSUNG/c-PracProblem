@@ -1,4 +1,4 @@
-#include "GeneralPerson.h"
+ï»¿#include "GeneralPerson.h"
 #include <iostream>
 
 using namespace std;
@@ -35,13 +35,13 @@ string GeneralPerson::getDonorNumber()const {
 
 void GeneralPerson::print() const 
 {
-	cout << "[ ÀÏ¹Ý ] " << getName() << "(±âÅ¹ÀÚÄÚµå:" << donorNumber << ") " << getPhoneNumber() << " " << getTotalDonationMoney()<<endl;
+	cout << "[ ì¼ë°˜ ] " << getName() << "(ê¸°íƒìžì½”ë“œ:" << donorNumber << ") " << getPhoneNumber() << " " << getTotalDonationMoney()<<endl;
 
 }
 
 string GeneralPerson::toString() const 
 {
-	return  "ÀÏ¹Ý " + donorNumber + " " + getName() + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
+	return  "ì¼ë°˜ " + donorNumber + " " + getName() + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
 
 }
 

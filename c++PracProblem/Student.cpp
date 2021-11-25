@@ -1,4 +1,4 @@
-#include "Student.h"
+ï»¿#include "Student.h"
 #include <iostream>
 
 using namespace std;
@@ -45,12 +45,12 @@ void Student::setMajor(string newMajor)
 
 void Student::print() const
 {
-	cout << "[ ÇÐ»ý ] " << getName() << "(ÇÐ¹ø:" << studentId << ", ÇÐ°ú:" << major << ") " << getPhoneNumber() << " " << getTotalDonationMoney() << endl;
+	cout << "[ í•™ìƒ ] " << getName() << "(í•™ë²ˆ:" << studentId << ", í•™ê³¼:" << major << ") " << getPhoneNumber() << " " << getTotalDonationMoney() << endl;
 }
 
 string Student::toString() const
 {
-	return "ÇÐ»ý "  + studentId+" " + getName() + " " + major + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
+	return "í•™ìƒ "  + studentId+" " + getName() + " " + major + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
 }
 
 string Student::getKey() const

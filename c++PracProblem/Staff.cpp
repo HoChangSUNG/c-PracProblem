@@ -1,4 +1,4 @@
-#include "Staff.h"
+ï»¿#include "Staff.h"
 #include <iostream>
 
 using namespace std;
@@ -48,13 +48,13 @@ void Staff::setExtensionNumber(string newExtensionNumber)
 
 void Staff::print() const
 {
-	cout <<"[±³Á÷¿ø] " << getName() << "(»ç¹ø:" << employeeId << ", ºÎ¼­:" << department << "(x" << extensionNumber << ")) " << getPhoneNumber() << " " << getTotalDonationMoney() << endl;
+	cout <<"[êµì§ì›] " << getName() << "(ì‚¬ë²ˆ:" << employeeId << ", ë¶€ì„œ:" << department << "(x" << extensionNumber << ")) " << getPhoneNumber() << " " << getTotalDonationMoney() << endl;
 
 }
 
 string Staff::toString() const
 {
-	return "±³Á÷¿ø " + employeeId+" " + getName()  + " " + department + " " + " "+extensionNumber + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
+	return "êµì§ì› " + employeeId+" " + getName()  + " " + department + " " + " "+extensionNumber + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
 }
 
 string Staff::getKey() const
