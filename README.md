@@ -235,7 +235,7 @@
   [MyList.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.h)
   [MyList.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.h)
   
-  [main.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)
-
+  [main.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)  
+  [FundList.new.txt](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/FundList.new.txt)
 
 </details>
