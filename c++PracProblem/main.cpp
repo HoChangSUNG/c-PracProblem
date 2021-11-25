@@ -95,17 +95,26 @@ void menu()
 
 void loadDonor(string path)
 {
+	const int MAX_LEN = 7;
+	string str;
 	ifstream inStream;
-	string line;
+	string input;
+	string inputData[MAX_LEN];
+
 	inStream.open(path);
-	for (int i = 0; !inStream.eof(); i++)
+
+	for (int i = 0; getline(inStream, str); i++)
 	{
+		stringstream stream;
+		stream.str(str);
+
+		for (int i = 0; stream >> input; i++)
+		{
+			inputData[i] = input;
+		}
+		stream.str("");
 		Person* donor;
-		getline(inStream, line);
-		if (line == "") 
-			break;
-		
-		vector<string> inputData = split(line, ' ');
+
 		if (inputData[0] == "학생")
 		{
 			donor = new Student(inputData[1], inputData[2], inputData[3], inputData[4], stoi(inputData[5]));
@@ -119,30 +128,26 @@ void loadDonor(string path)
 		else
 		{
 			donor = new GeneralPerson(inputData[1], inputData[2], inputData[3], stoi(inputData[4]));
-
 		}
 		linkedList.add(donor);
 	}
 }
 
-vector<string> split(string inputLine, char delimiter)
-{
-	vector<string> splittedStr;
-	stringstream stringstm(inputLine);
-	string temp;
-
-	while (getline(stringstm, temp, delimiter))
-	{
-		splittedStr.push_back(temp);
-	}
-
-	return splittedStr;
-}
-
 void  insertDonor(string info)
 {
+	const int MAX_LEN = 7;
+	string input;
+	string inputData[MAX_LEN];
+
+	stringstream stream;
+	stream.str(info);
+
+	for (int i = 0; stream >> input; i++)
+	{
+		inputData[i] = input;
+	}
+	stream.str("");
 	Person* donor;
-	vector<string> inputData = split(info, ' ');
 
 	if (inputData[0] == "학생")
 	{
