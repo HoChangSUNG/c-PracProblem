@@ -215,5 +215,27 @@
 [MyString.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyString.h) 
 [MyString.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyString.cpp)
 
+</details>
+
+<details>
+<summary>실습7 - 과제 코드</summary>
+  
+* 문제</br>
+[Person.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Person.h)
+[Person.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Person.cpp)  
+  [Student.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Student.h)
+  [Student.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Student.cpp)
+  [Staff.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Staff.h)
+  [Staff.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Staff.cpp)
+  [GeneralPerson.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/GeneralPerson.h)
+  [GeneralPerson.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/GeneralPerson.cpp)  
+  
+  [Node.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Node.h)
+  [Node.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/Node.hpp)  
+  [MyList.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.h)
+  [MyList.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.h)
+  
+  [main.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)
+
 
 </details>
