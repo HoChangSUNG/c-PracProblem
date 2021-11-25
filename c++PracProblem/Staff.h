@@ -1,9 +1,12 @@
 #pragma once
 #include "Person.h"
-class Staff : public Person {
+class Staff : public Person 
+{
 
 public:
 	Staff(string newEmployeeId, string newName, string newDepartment, string newPhoneNumber,string newExtensionNumber, int newTotalMoney);
+	Staff(const Staff& staff);
+
 	string getEmployeeId() const;
 	string getDepartment()const;
 	string getExtensionNumber()const;
@@ -11,7 +14,9 @@ public:
 	void setEmployeeId(string newEmployeeId);
 	void setDepartment(string newDepartment);
 	void setExtensionNumber(string newExtensionNumber);
-	bool operator >(const Person& person)const;
+
+
+	string getKey() const;
 
 	virtual void print() const;
 	virtual string toString() const;

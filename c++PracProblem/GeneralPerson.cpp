@@ -3,17 +3,30 @@
 
 using namespace std;
 int GeneralPerson::maxIntNumber = 0;
-GeneralPerson::GeneralPerson(string newName, string newPhoneNumber, int newTotalMoney) :Person(newName, newPhoneNumber, newTotalMoney)
+
+GeneralPerson::GeneralPerson(string newName, string newPhoneNumber, int newTotalMoney) 
+	:Person(newName, newPhoneNumber, newTotalMoney)
 {
 	generateDonorNumber();
 }
 
-GeneralPerson::GeneralPerson(string newDonorNumber,string newName, string newPhoneNumber, int newTotalMoney) : Person(newName, newPhoneNumber, newTotalMoney), donorNumber(newDonorNumber)
+GeneralPerson::GeneralPerson(string newDonorNumber,string newName, string newPhoneNumber, int newTotalMoney) 
+	: Person(newName, newPhoneNumber, newTotalMoney), donorNumber(newDonorNumber)
 {
 	updateMaxIntNumber(donorNumberToInt(newDonorNumber));
 	
 }
 
+GeneralPerson::GeneralPerson(const GeneralPerson& generalPerson) :Person(generalPerson)
+{
+	donorNumber = generalPerson.getDonorNumber();
+}
+
+GeneralPerson::~GeneralPerson()
+{
+	if (maxIntNumber == donorNumberToInt(donorNumber))
+		maxIntNumber--;
+}
 string GeneralPerson::getDonorNumber()const {
 	return donorNumber;
 }
@@ -22,7 +35,7 @@ string GeneralPerson::getDonorNumber()const {
 
 void GeneralPerson::print() const 
 {
-	cout << "[ 이름 ] " << getName() << "(기탁자코드:" << donorNumber << ") " << getPhoneNumber() << " " << getTotalDonationMoney();
+	cout << "[ 일반 ] " << getName() << "(기탁자코드:" << donorNumber << ") " << getPhoneNumber() << " " << getTotalDonationMoney()<<endl;
 
 }
 
@@ -80,23 +93,8 @@ string GeneralPerson::intToStr(int number)const
 	}
 	return result;
 }
-/*
-bool GeneralPerson::operator >(const Person& person)const
+
+string GeneralPerson::getKey() const
 {
-	cout <<"일반인" << getTotalDonationMoney() << " " << person.getTotalDonationMoney() << endl;
-	if (getTotalDonationMoney() > person.getTotalDonationMoney())
-		return true;
-	else if (getTotalDonationMoney() < person.getTotalDonationMoney())
-		return false;
-	else {
-		if (getName() < person.getName())
-			return true;
-		else if (getName() > person.getName())
-			return false;
-		else {
-			if (getPhoneNumber() < person.getPhoneNumber())
-				return true;
-		}
-	}
-	return false;
-}*/
+	return donorNumber;
+}

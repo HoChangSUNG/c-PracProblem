@@ -3,11 +3,18 @@
 
 using namespace std;
 
-Staff::Staff(string newEmployeeId, string newName, string newDepartment, string newPhoneNumber, string newExtensionNumber, int newTotalMoney) :Person(newName, newPhoneNumber, newTotalMoney)
+Staff::Staff(string newEmployeeId, string newName, string newDepartment, string newExtensionNumber, string newPhoneNumber, int newTotalMoney) :Person(newName, newPhoneNumber, newTotalMoney)
 {
 	employeeId= newEmployeeId;
 	department = newDepartment;
 	extensionNumber = newExtensionNumber;
+}
+
+Staff::Staff(const Staff& staff) :Person(staff)
+{
+	employeeId = staff.employeeId;
+	department = staff.department;
+	extensionNumber = staff.extensionNumber;
 }
 
 string Staff::getEmployeeId() const { 
@@ -41,33 +48,16 @@ void Staff::setExtensionNumber(string newExtensionNumber)
 
 void Staff::print() const
 {
-	cout <<"[교직원] " << getName() << "(사번:" << employeeId << ", 부서:" << department << "(x" << extensionNumber << ")) " << getPhoneNumber() << " " << getTotalDonationMoney();
+	cout <<"[교직원] " << getName() << "(사번:" << employeeId << ", 부서:" << department << "(x" << extensionNumber << ")) " << getPhoneNumber() << " " << getTotalDonationMoney() << endl;
 
 }
 
 string Staff::toString() const
 {
-	return "교직원 " + employeeId+" " + getName()  + " " + department + " " + getPhoneNumber() +" "+ extensionNumber + " " + to_string(getTotalDonationMoney());
+	return "교직원 " + employeeId+" " + getName()  + " " + department + " " + " "+extensionNumber + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
 }
-/*
-bool Staff::operator >(const Person& person)const 
-{
-	cout << "교직원" << getTotalDonationMoney() << " " << person.getTotalDonationMoney() << endl;
-	if (getTotalDonationMoney() > person.getTotalDonationMoney())
-		return true;
-	else if (getTotalDonationMoney() < person.getTotalDonationMoney())
-		return false;
-	else {
-		if (getName() < person.getName())
-			return true;
-		else if (getName() > person.getName())
-			return false;
-		else {
-			if (getPhoneNumber() < person.getPhoneNumber())
-				return true;
-		}
-	}
-	return false;
 
+string Staff::getKey() const
+{
+	return employeeId;
 }
-*/

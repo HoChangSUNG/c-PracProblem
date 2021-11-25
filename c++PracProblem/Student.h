@@ -1,15 +1,18 @@
 #pragma once
 #include "Person.h"
-class Student : public Person {
+class Student : public Person 
+{
 
 public:
 	Student(string newStudentId, string newName, string major, string newPhoneNumber, int newTotalMoney);
-
+	Student(const Student& student);
 	string getStudentId() const;
 	string getMajor()const;
 	void setStudentId(string newStudentId);
 	void setMajor(string newMajor);
-	bool operator >(const Person& person)const;
+	Student& operator =(const Student& s);
+
+	string getKey() const;
 
 	virtual void print() const;
 	virtual string toString() const;

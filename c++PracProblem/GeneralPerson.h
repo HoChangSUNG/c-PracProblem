@@ -1,16 +1,20 @@
 #pragma once
 #include "Person.h"
-class GeneralPerson : public Person {
+class GeneralPerson : public Person 
+{
 
 public:
 	GeneralPerson(string newName,string newPhoneNumber,int newTotalMoney);
 	GeneralPerson(string newDonorNumber,string newName, string newPhoneNumber, int newTotalMoney);
+	GeneralPerson(const GeneralPerson& generalPerson);
 
+	~GeneralPerson();
 	string getDonorNumber()const;
 	virtual void print() const;
 	virtual string toString() const;
+	string getKey() const;
 
-	bool operator >(const Person& person)const;
+
 private:
 	string donorNumber;
 

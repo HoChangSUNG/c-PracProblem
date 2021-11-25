@@ -9,6 +9,20 @@ Student::Student(string newStudentId,  string newName,string newMajor, string ne
 	major = newMajor;
 }
 
+Student::Student(const Student& student):Person(student)
+{
+	studentId = student.studentId;
+	major = student.major;
+}
+
+Student& Student::operator =(const Student& s)
+{
+	Person::operator=(s);
+	major=s.getMajor();
+	studentId=s.getStudentId();
+	return *this;
+}
+
 string Student::getStudentId() const
 {
 	return studentId;
@@ -31,35 +45,15 @@ void Student::setMajor(string newMajor)
 
 void Student::print() const
 {
-	cout << "[ 학생 ] " << getName() << "(학번:" << studentId << ", 학과:" << major << ") " << getPhoneNumber() << " " << getTotalDonationMoney();
+	cout << "[ 학생 ] " << getName() << "(학번:" << studentId << ", 학과:" << major << ") " << getPhoneNumber() << " " << getTotalDonationMoney() << endl;
 }
 
 string Student::toString() const
 {
 	return "학생 "  + studentId+" " + getName() + " " + major + " " + getPhoneNumber() + " " + to_string(getTotalDonationMoney());
 }
-/*
-bool Student::operator >(const Person& person)const
+
+string Student::getKey() const
 {
-	cout << "학생" << getTotalDonationMoney() << " " << person.getTotalDonationMoney() << endl;
-	if (getTotalDonationMoney() > person.getTotalDonationMoney())
-		return true;
-	else if (getTotalDonationMoney() < person.getTotalDonationMoney())
-		return false;
-	else {
-		if (getName() < person.getName())
-			return true;
-		else if (getName() > person.getName())
-			return false;
-		else{
-			if (getPhoneNumber() < person.getPhoneNumber())
-				return true;
-		}
-	}
-	
-	return false;
-	
-	
-	
+	return studentId;
 }
-*/
