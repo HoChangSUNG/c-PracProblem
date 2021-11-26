@@ -32,7 +32,7 @@ void MyList<T>::add(T* person)
 	{
 		for (cur= head->getNext(); cur != nullptr; cur = cur->getNext(), prev = prev->getNext())
 		{
-			if (*(newNode->getElement()) > *(cur->getElement())) 				
+			if (newNode->getElement()->compareTo(*(cur->getElement()))>0)
 				break;
 		}
 	}
@@ -74,7 +74,6 @@ void MyList<T>::deleteElement(string deleteKey)
 	{
 		if ((cur->getElement()->getKey()==deleteKey) || (cur->getElement()->getPhoneNumber()==deleteKey))
 			break; 
-		
 	}
 
 	if (cur == nullptr) 
@@ -131,7 +130,7 @@ void MyList<T>::moveNode(Node<T>* newNode)
 
 	for (cur = head->getNext(); cur != nullptr; cur = cur->getNext(), prev = prev->getNext())
 	{
-		if (*(newNode->getElement()) > *(cur->getElement()))
+		if (newNode->getElement()->compareTo(*(cur->getElement()))>0)
 			break;
 	}
 	
