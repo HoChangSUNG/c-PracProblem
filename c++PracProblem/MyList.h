@@ -11,7 +11,7 @@ public:
 	int getSize()const;
 	bool isEmpty()const;
 
-	void add( T* person);
+	void add( T* element);
 	void print();
 	void deleteElement(string deleteKey);
 	void updateElement(string updateKey,int updateDonorMoney);

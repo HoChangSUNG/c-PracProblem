@@ -16,14 +16,6 @@ Student::Student(const Student& student):Person(student)
 	major = student.major;
 }
 
-Student& Student::operator =(const Student& s)
-{
-	Person::operator=(s);
-	major=s.getMajor();
-	studentId=s.getStudentId();
-	return *this;
-}
-
 string Student::getStudentId() const
 {
 	return studentId;

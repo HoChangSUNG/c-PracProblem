@@ -20,14 +20,6 @@ Person::Person() {}
 
 Person::~Person() {}
 
-Person& Person::operator =(const Person& s)
-{
-	name = s.getName();
-	phoneNumber = s.getPhoneNumber();
-	totalDonationMoney = s.getTotalDonationMoney();
-	return *this;
-}
-
 void Person::print()const
 {
 	cout << "이름 : " << name << " 전화번호 : " << phoneNumber << " 총 기탁액: " << totalDonationMoney << endl;

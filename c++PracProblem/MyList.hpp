@@ -21,9 +21,9 @@ bool  MyList<T>::isEmpty()const
 }
 
 template <typename T>
-void MyList<T>::add(T* person)
+void MyList<T>::add(T* element)
 {
-	Node<T>* newNode = new Node<T>(person, nullptr);
+	Node<T>* newNode = new Node<T>(element, nullptr);
 	
 	Node<T>*cur=nullptr;
 	Node<T>* prev = head;
@@ -76,7 +76,7 @@ void MyList<T>::deleteElement(string deleteKey)
 			break; 
 	}
 
-	if (cur == nullptr) 
+	if (cur == nullptr) //해당 조건에 만족하는 기탁자가 존재하지 않은 경우
 	{
 		cout << "해당 조건에 만족하는 기탁자가 존재하지 않습니다" << endl;
 		return;
@@ -118,11 +118,11 @@ void MyList<T>::updateElement(string updateKey,int updateDonorMoney)
 	cout << "<변경> ";
 	cur->getElement()->print();//변경 정보 출력
 
-	moveNode(cur);
+	moveNode(cur);//변경된 노드 다시 정렬
 }
 
 template <typename T>
-void MyList<T>::moveNode(Node<T>* newNode)
+void MyList<T>::moveNode(Node<T>* newNode)//노드 정렬
 {
 
 	Node<T>* cur = nullptr;

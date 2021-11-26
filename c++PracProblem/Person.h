@@ -21,7 +21,6 @@ public:
 	void setPhoneNumber(string newPhoneNumber);
 	void setTotalDonationMoney(int newTotalMoney);
 	void plusDonationMoney(int newMoney);
-	Person& operator =(const Person& s);
 	int compareTo(const Person& person)const;
 
 private:

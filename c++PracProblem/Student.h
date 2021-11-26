@@ -10,7 +10,6 @@ public:
 	string getMajor()const;
 	void setStudentId(string newStudentId);
 	void setMajor(string newMajor);
-	Student& operator =(const Student& s);
 
 	string getKey() const;
 
