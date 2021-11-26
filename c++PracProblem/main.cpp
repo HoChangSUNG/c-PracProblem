@@ -10,9 +10,9 @@ using namespace std;
 MyList<Person> linkedList;
 void menu();
 void loadDonor(string path);
-//vector<string> split(string inputLine, char delimiter);
 void  insertDonor(string info);
 bool isExistDonorPhoneNumber(string info);
+bool isExistDonorKey(string info);
 
 int main(int argc, char* argv[])
 {
@@ -39,6 +39,8 @@ int main(int argc, char* argv[])
 
 			if (isExistDonorPhoneNumber(info))
 				cout << "!!! 동일한 전화번호가 존재하여 신규 등록 불가 !!!" << endl;
+			else if (isExistDonorKey(info))
+				cout << "!!! 동일한 key가 존재하여 신규 등록 불가 !!!" << endl;
 			else
 				insertDonor(info);
 		}
@@ -169,21 +171,6 @@ void  insertDonor(string info)
 	cout << "<신규>";
 	donor->print();
 }
-/*
-bool isExistDonorPhoneNumber(string info)
-{
-	vector<string> inputData = split(info, ' ');
-
-	if (inputData[0] == "학생" || inputData[0] == "교직원")
-	{
-		return linkedList.isExist(inputData[4]);
-	}
-	else
-	{
-		return linkedList.isExist(inputData[2]);
-	}
-	return false;
-}*/
 
 bool isExistDonorPhoneNumber(string info) 
 {
@@ -208,6 +195,30 @@ bool isExistDonorPhoneNumber(string info)
 	{
 		return linkedList.isExist(inputData[2]);
 	}
+	return false;
+
+}
+
+bool isExistDonorKey(string info)
+{
+	const int MAX_LEN = 7;
+	string input;
+	string inputData[MAX_LEN];
+
+	stringstream stream;
+	stream.str(info);
+
+	for (int i = 0; stream >> input; i++)
+	{
+		inputData[i] = input;
+	}
+	stream.str("");
+
+	if (inputData[0] == "학생" || inputData[0] == "교직원")
+	{
+		return linkedList.isExist(inputData[1]);
+	}
+
 	return false;
 
 }
