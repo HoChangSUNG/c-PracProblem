@@ -4,7 +4,6 @@
 template <typename T>
 Node<T>::Node(T* e, Node<T>* n)
 {
-
 	element = e;
 	next = n;
 }

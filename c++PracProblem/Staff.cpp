@@ -3,7 +3,8 @@
 
 using namespace std;
 
-Staff::Staff(string newEmployeeId, string newName, string newDepartment, string newExtensionNumber, string newPhoneNumber, int newTotalMoney) :Person(newName, newPhoneNumber, newTotalMoney)
+Staff::Staff(string newEmployeeId, string newName, string newDepartment, string newExtensionNumber, string newPhoneNumber, int newTotalMoney) 
+	:Person(newName, newPhoneNumber, newTotalMoney)
 {
 	employeeId= newEmployeeId;
 	department = newDepartment;
@@ -48,8 +49,8 @@ void Staff::setExtensionNumber(string newExtensionNumber)
 
 void Staff::print() const
 {
-	cout <<"[교직원] " << getName() << "(사번:" << employeeId << ", 부서:" << department << "(x" << extensionNumber << ")) " << getPhoneNumber() << " " << getTotalDonationMoney() << endl;
-
+	cout <<"[교직원] " << getName() << "(사번:" << employeeId << ", 부서:" << department << "(x" << extensionNumber << ")) " 
+		<< getPhoneNumber() << " " << getTotalDonationMoney() << endl;
 }
 
 string Staff::toString() const

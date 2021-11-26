@@ -4,17 +4,16 @@
 using namespace std;
 int GeneralPerson::maxIntNumber = 0;
 
-GeneralPerson::GeneralPerson(string newName, string newPhoneNumber, int newTotalMoney) 
-	:Person(newName, newPhoneNumber, newTotalMoney)
+GeneralPerson::GeneralPerson(string newName, string newPhoneNumber, int newTotalMoney)
+	:Person(newName, newPhoneNumber, newTotalMoney)// 일반 기탁자코드를 자동 생성하는 경우
 {
 	generateDonorNumber();
 }
 
 GeneralPerson::GeneralPerson(string newDonorNumber,string newName, string newPhoneNumber, int newTotalMoney) 
-	: Person(newName, newPhoneNumber, newTotalMoney), donorNumber(newDonorNumber)
+	: Person(newName, newPhoneNumber, newTotalMoney), donorNumber(newDonorNumber)// 일반 기탁자코드를 입력 받을 경우
 {
 	updateMaxIntNumber(donorNumberToInt(newDonorNumber));
-	
 }
 
 GeneralPerson::GeneralPerson(const GeneralPerson& generalPerson) :Person(generalPerson)
@@ -53,7 +52,7 @@ int GeneralPerson::getDigit(int number)const
 	return digit;
 }
 
-int GeneralPerson::donorNumberToInt(string donorNumber)const 
+int GeneralPerson::donorNumberToInt(string donorNumber)const //기탁자 코드 뒷자리 5개를 int로 변경
 {
 	int base = 10;
 	int result = 0;
@@ -65,13 +64,13 @@ int GeneralPerson::donorNumberToInt(string donorNumber)const
 	return result;
 }
 
-void GeneralPerson::updateMaxIntNumber(int newNumber)
+void GeneralPerson::updateMaxIntNumber(int newNumber)//입력받은 기탁자 코드가 현재 제일 큰 기탁자 코드인 경우
 {
 	if (maxIntNumber < newNumber)
 		maxIntNumber = newNumber;
 }
 
-void GeneralPerson::generateDonorNumber()
+void GeneralPerson::generateDonorNumber()//기탁자 코드 생성
 {
 	const int intDonorNumberDigit = 5;
 	donorNumber = "V";

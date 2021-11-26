@@ -82,7 +82,7 @@ void MyList<T>::deleteElement(string deleteKey)
 		return;
 	}
 	cout << "<삭제> ";
-	cur->getElement()->print();
+	cur->getElement()->print();//삭제된 정보 출력
 
 	prev->setNext(cur->getNext());
 	delete cur;
@@ -116,7 +116,7 @@ void MyList<T>::updateElement(string updateKey,int updateDonorMoney)
 	cur->setNext(nullptr);
 
 	cout << "<변경> ";
-	cur->getElement()->print();
+	cur->getElement()->print();//변경 정보 출력
 
 	moveNode(cur);
 }
@@ -155,13 +155,10 @@ void MyList<T>::fileSave(string path)const
 template <typename T>
 bool MyList<T>::isExist(string findKey)const
 {
-	Node<T>* cur = head->getNext();
-
-	for (cur; cur != nullptr; cur = cur->getNext())
+	for (Node<T>* cur = head->getNext(); cur != nullptr; cur = cur->getNext())
 	{
 		if ((cur->getElement()->getKey() == findKey) || (cur->getElement()->getPhoneNumber() == findKey))
 			return true;
 	}
 	return false;
-
 }

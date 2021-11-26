@@ -22,9 +22,6 @@ public:
 	void setTotalDonationMoney(int newTotalMoney);
 	void plusDonationMoney(int newMoney);
 	Person& operator =(const Person& s);
-	/*
-	bool operator >(const Person &person)const;
-	*/
 	int compareTo(const Person& person)const;
 
 private:

@@ -68,30 +68,6 @@ void Person::setTotalDonationMoney(int newTotalMoney)
 	totalDonationMoney = newTotalMoney;
 }
 
-/*
-bool Person::operator >(const Person& person)const 
-{
-	if (getTotalDonationMoney() > person.getTotalDonationMoney())
-		return true;
-	else if (getTotalDonationMoney() < person.getTotalDonationMoney())
-		return false;
-	else 
-	{
-		if (getName() < person.getName()) 
-			return true;
-		else if (getName() > person.getName()) 
-			return false;
-		
-		else
-		{
-			if (getPhoneNumber() < person.getPhoneNumber())
-				return true;
-		}
-	}
-	return false;
-}
-*/
-
 int Person::compareTo(const Person& person)const
 {
 	if (getTotalDonationMoney() > person.getTotalDonationMoney())
