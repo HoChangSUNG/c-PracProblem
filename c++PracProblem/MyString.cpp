@@ -206,15 +206,15 @@ bool MyString::greaterThan(int strSize, const char* srcStr)const
 bool MyString::lessThan(int strSize, const char* srcStr)const
 {
 	int i = 0;
-	while (i < size && i < strSize)
+
+	for (; i < size && i < strSize; i++) 
 	{
 		if (charArr[i] < srcStr[i])
 			return true;
 		else if (charArr[i] > srcStr[i])
 			return false;
-		else
-			i++;
 	}
+
 	if (size < strSize)
 		return true;
 
