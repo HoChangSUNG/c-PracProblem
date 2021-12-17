@@ -113,7 +113,7 @@
 <summary>실습7 - 파일+상속+포인터+다형성 구현</summary>
   
 * 문제</br>
-[문제 요구사항](https://velog.io/@hochang/c-%EA%B3%BC%EC%A0%9C-%EC%9A%94%EA%B5%AC-%EC%A1%B0%EA%B1%B4)
+[문제 요구사항](https://velog.io/@hochang/C-%EC%B5%9C%EC%A2%85-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8SPEC)
 
 </details>
 
@@ -241,7 +241,13 @@
   [MyList.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.h)
   [MyList.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/MyList.hpp)
   
-  [main.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)  
+  [DonationManage.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/DonationManage.h)  
+  [DonationManage.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/DonationManage.cpp)
+  
+  [main.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)  
   [FundList.new.txt](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/FundList.new.txt)
 
 </details>
+
+
+
