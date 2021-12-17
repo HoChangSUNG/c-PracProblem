@@ -244,7 +244,7 @@
   [DonationManage.h](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/DonationManage.h)  
   [DonationManage.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/DonationManage.cpp)
   
-  [main.hpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)  
+  [main.cpp](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/main.cpp)  
   [FundList.new.txt](https://github.com/HoChangSUNG/c-PracProblem/blob/main/c%2B%2BPracProblem/FundList.new.txt)
 
 </details>
