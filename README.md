@@ -102,10 +102,7 @@
 <summary>실습6 - MyString class 구현</summary>
   
 * 문제</br>
-![image](https://user-images.githubusercontent.com/76422685/139238684-1e0aa5ef-7240-4ef7-b05c-6d9b089b1f65.png)
-![image](https://user-images.githubusercontent.com/76422685/139238766-7d8149d0-95f0-4eb3-aa99-370e273d0170.png)
-![image](https://user-images.githubusercontent.com/76422685/139238817-5921b610-f8be-458e-8c6a-dd55bdae273b.png)
-![image](https://user-images.githubusercontent.com/76422685/139238891-61a22702-c400-49b0-844f-f3e7499d492b.png)
+[문제 요구사항](https://velog.io/@hochang/MyString-Class-%EA%B5%AC%ED%98%84-spec#23-%EC%B6%94%EA%B0%80-%EA%B8%B0%EB%8A%A5)
 
 </details>
 
