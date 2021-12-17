@@ -165,7 +165,8 @@ bool MyString::isEqual(const MyString& str)const
 		}
 		return true;
 	}
-	return false;
+	else
+		return false;
 }
 
 bool MyString::operator ==(const MyString& str)const
