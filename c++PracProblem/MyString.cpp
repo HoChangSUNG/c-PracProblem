@@ -14,15 +14,16 @@ MyString::MyString()
 MyString::MyString(const char *srcStr)
 {
 	int newSize = getNewArrSize(srcStr);
-	int newCapacity = getNewArrCapacity(newSize);
-	charArr = new char[newCapacity];
-	copyCharArr(newSize, newCapacity, srcStr);
+	capacity = getNewArrCapacity(newSize);
+	charArr = new char[capacity];
+	copyCharArr(newSize, srcStr);
 }
 
 MyString::MyString(const MyString &srcStr)
 {
-	charArr = new char[srcStr.capacity];
-	copyCharArr(srcStr.size, srcStr.capacity, srcStr.charArr);
+	capacity = srcStr.capacity;
+	charArr = new char[capacity];
+	copyCharArr(srcStr.size, srcStr.charArr);
 
 }
 
@@ -38,16 +39,9 @@ int MyString::getNewArrSize(const char* srcStr)const
 	return strLen;
 }
 
-void MyString::copyCharArr(int newSize, int newCapacity, const char* srcStr)
+void MyString::copyCharArr(int newSize, const char* srcStr)
 {
-	if (capacity != newCapacity)
-	{
-		delete[] charArr;
-		charArr = new char[newCapacity];
-	}
-	
 	size = newSize;
-	capacity = newCapacity;
 	for (int i = 0; i < size; i++)
 		charArr[i] = srcStr[i];
 	charArr[size] = '\0';
@@ -77,21 +71,38 @@ const MyString& MyString::operator =(const MyString &srcStr)
 	if (this == &srcStr)
 		return *this;
 
-	copyCharArr(srcStr.size, srcStr.capacity, srcStr.charArr);
+	delete[] charArr;
+	capacity = srcStr.capacity;
+	charArr = new char[capacity];
+	copyCharArr(srcStr.size, srcStr.charArr);
 	return *this;
 }
 
 const MyString& MyString::operator =(const char *srcStr)
 {
+	delete[] charArr;
 	int newSize = getNewArrSize(srcStr);
-	copyCharArr(newSize, getNewArrCapacity(newSize), srcStr);
+	capacity = getNewArrCapacity(newSize);
+	charArr = new char[capacity];
+	copyCharArr(newSize, srcStr);
 	return 	*this;
 }
 
 const MyString MyString::plus(int str2ndSize, const char *str2nd)const
 {
-	MyString temp(charArr);
-	temp.appendMyString(str2ndSize,str2nd);
+	char* tempArr = new char[getNewArrCapacity(size + str2ndSize)];
+	for (int i = 0; i < size; i++)
+	{
+		tempArr[i] = charArr[i];
+	}
+	for (int j = 0; j < str2ndSize; j++)
+	{
+		tempArr[size + j] = str2nd[j];
+	}
+	tempArr[size + str2ndSize] = '\0';
+
+	MyString temp(tempArr);
+	delete[] tempArr;
 	return temp;
 }
 
@@ -446,7 +457,7 @@ void MyString::addChar(char c)
 
 ostream& operator <<(ostream& os, const MyString &str)
 {
-	os << str.charArr<<";";
+	os << str.charArr<<"±æÀÌ"<<str.size<<"capacity"<<str.capacity;
 	return os;
 }
 
