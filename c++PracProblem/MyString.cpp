@@ -266,29 +266,18 @@ bool MyString::operator >=(const char* str)const
 
 int MyString::findPos(int pos, int subStrSize, const char* subStr)const
 {
-	int resultPos = -1;
-	int subStrIdx = 0;
-	if (pos < 0|| subStrSize ==0)
-		return resultPos;
-
-	for (int i = pos; i < size; i++)
+	for (int i= pos; i <= size - subStrSize; i++)
 	{
-		if (charArr[i] == subStr[subStrIdx])
-			subStrIdx++;
-		else
+		int j;
+		for (j = 0; j < subStrSize; j++)
 		{
-			subStrIdx = 0;
-			if (charArr[i] == subStr[subStrIdx])
-				subStrIdx++;
+			if (charArr[i + j] != subStr[j])
+				break;
 		}
-
-		if (subStrIdx == subStrSize)
-		{
-			resultPos = i - subStrSize + 1;
-			break;
-		}
+		if (j == subStrSize)
+			return i;
 	}
-	return resultPos;
+	return -1;
 }
 
 int MyString::find(const char* subStr)const
